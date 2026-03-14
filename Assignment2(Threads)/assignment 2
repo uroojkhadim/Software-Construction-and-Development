@@ -22,9 +22,8 @@ Assignment2(Threads)/
 ├── bin/ (Compiled .class files)
 └── assignment 2 (This file)
 
-==================================================
 2. Brief Description
-==================================================
+
 This project demonstrates various multithreading concepts in Java, including:
 - Thread pool management with ExecutorService.
 - Concurrent execution of multiple threads (Table printing).
@@ -33,11 +32,9 @@ This project demonstrates various multithreading concepts in Java, including:
 - Inter-thread communication using wait() and notify() (Printer Job).
 - Deadlock detection and resolution using consistent lock ordering.
 
-==================================================
 3. Screenshots and Explanations
-==================================================
 
-[Screenshot 1: Task 1 Demo - Threads vs Tasks]
+
 Shows 5 tasks being executed by a fixed pool of 2 threads. 
 Notice how pool-1-thread-1 and pool-1-thread-2 are reused for all tasks.
 

@@ -1,0 +1,68 @@
+             Assignment 2 (Threads)
+Submitted By:
+                Urooj Khadim
+Submitted To:
+                Sania Iram
+Registration number:
+                FA23-BSE-019
+Subject:
+                Software Construction and Development
+
+1. Project Structure
+
+Assignment2(Threads)/
+├── src/
+│   ├── AlphabetPrinting.java
+│   ├── DeadlockDemo.java
+│   ├── DeadlockSolved.java
+│   ├── JointAccount.java
+│   ├── PrinterJob.java
+│   ├── TablePrinting.java
+│   └── Task1Demo.java
+├── bin/ (Compiled .class files)
+└── assignment 2 (This file)
+
+==================================================
+2. Brief Description
+==================================================
+This project demonstrates various multithreading concepts in Java, including:
+- Thread pool management with ExecutorService.
+- Concurrent execution of multiple threads (Table printing).
+- Random character generation with fluctuating sleep times.
+- Synchronization mechanisms for shared resources (Joint Bank Account).
+- Inter-thread communication using wait() and notify() (Printer Job).
+- Deadlock detection and resolution using consistent lock ordering.
+
+==================================================
+3. Screenshots and Explanations
+==================================================
+
+[Screenshot 1: Task 1 Demo - Threads vs Tasks]
+Shows 5 tasks being executed by a fixed pool of 2 threads. 
+Notice how pool-1-thread-1 and pool-1-thread-2 are reused for all tasks.
+
+[Screenshot 2: Table Printing]
+Demonstrates the concurrent printing of the student roll number table 
+and a date of birth iteration. The outputs are interleaved.
+
+[Screenshot 3: Alphabet Printing]
+Shows random alphabets being printed with fluctuating visualization 
+through the sleep method.
+
+[Screenshot 4: Joint Account Synchronization]
+Shows User A and User B attempting withdrawals. Because of synchronization, 
+User B is prevented from withdrawing when the balance becomes insufficient 
+after User A's transaction.
+
+[Screenshot 5: Printer Job (wait/notify)]
+The printer waits when the tray is low on pages and automatically resumes 
+once the refill thread adds more pages and notifies the waiting thread.
+
+[Screenshot 6: Deadlock Demonstration]
+Shows a deadlock scenario where Thread 1, 2, and 3 are all waiting for 
+locks held by each other, causing the program to hang indefinitely.
+
+[Screenshot 7: Deadlock Solved]
+Shows the resolution of the deadlock. By enforcing a consistent global 
+lock ordering, all threads are able to acquire their required locks 
+and finish execution successfully.
